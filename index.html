@@ -17,38 +17,39 @@
 
 <body>
 
+    <header class="jumbotron jumbotron-fluid sticky-top">
+        <div class="container-fluid">
+            <div class="row row-content">
+                <div class="col-md-2 align-self-center">
+                    <img src="images.jpg" class="img-fluid" />
+                </div>
+                
+                <div class="input-group col align-self-center ">
+                     <input type="search" class="input rounded " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn text-white bg-secondary ">search</button>
+                </div>
+                
+                
+                <div class="col-sm-4 align-self-center" >
+                    <button class="bg-success text-white  mx-1">Get A Quote for a bulk order</button>
+                </div>
+                <div class="col-3 align-self-center">
+                    <button class="bg-info  text-white ">Signin</button>
+                </div>
+                <div class="col-1 align-self-center">
+                    <a href="#"><i class="bi bi-cart col-2 bg-danger"></i>Cart</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <nav class="navbar navbar-light bg-#901CAD fixed-top">
+    <nav class="navbar navbar-light bg-#901CAD ">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="input-group col">
-                <input type="search" class="input rounded " placeholder="Search" aria-label="Search"
-                    aria-describedby="search-addon" />
-                <button type="button" class="btn btn-outline-primary">search</button>
-
-
-
-            </div>
-            <div class="btn">
-                <button>Get A Quote for a bulk order</button>
-
-            </div>
-
-
-            <div class="btn">
-                <button>Signin</button>
-            </div>
-
-            <!---cart icon not working need to be figure out-->
-            <div class="btn">
-                <a href="#"><i class="bi bi-cart"></i>Cart</a>
-            </div>
-
-
-
+            
             <div class="offcanvas offcanvas-start text-light" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header bg-success">
