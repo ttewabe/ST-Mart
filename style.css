@@ -91,3 +91,18 @@ form {
 li{
     text-align: left;
 }
+<<<<<<< imgs
+
+#carouselExampleControls{
+   position: absolute;
+   max-height: 300px;
+}
+#just{
+   position: relative;
+
+}
+.spacer{
+    margin-top: 100px;
+}
+=======
+>>>>>>> main
