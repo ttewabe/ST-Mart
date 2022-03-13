@@ -97,9 +97,6 @@ li{
    max-height: 300px;
 }
 #just{
-   position: relative;
-
-}
-.spacer{
-    margin-top: 100px;
-}
+    position: relative;
+ 
+ }
