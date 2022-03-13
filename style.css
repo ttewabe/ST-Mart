@@ -100,3 +100,53 @@ li{
     position: relative;
  
  }
+ .slider{
+     font-size: 40px;
+     font-weight: bold;
+     text-transform: uppercase;
+     height: 150px;
+     
+
+ }
+ .slider-text1{
+     color: #1f0d3d;
+ }
+ .slider-text2{
+    color: #0d373d;
+}
+.slider-text3{
+    color: #e7e54d;
+}
+.slider-text4{
+    color: #8be76f;
+}
+.slider-text5{
+    background-color: #e2dee9;
+    color: #5199d4;
+}
+.slider {
+    animation-name            : scrollBanner;
+    animation-duration        : 25s;
+    animation-delay           : 10s;
+    animation-iteration-count : 1;
+    animation-fill-mode       : forwards;   
+    width                     : 500%;        
+    column-count              : 5;
+    column-gap                : 0;
+}
+
+
+
+@keyframes scrollBanner {
+    from { transform : translateX(0) }
+    17%  { transform : translateX(0%) }
+    20%  { transform : translateX(-20%) }
+    37%  { transform : translateX(-20%) }
+    40%  { transform : translateX(-40%) }
+    57%  { transform : translateX(-40%) }
+    60%  { transform : translateX(-60%) }
+    77%  { transform : translateX(-60%) }
+    80%  { transform : translateX(-80%) }
+    97%  { transform : translateX(-80%) }
+    to   { transform : translateY(0%) }
+}
