@@ -91,3 +91,12 @@ form {
 li{
     text-align: left;
 }
+
+#carouselExampleControls{
+   position: absolute;
+   max-height: 300px;
+}
+#just{
+    position: relative;
+ 
+ }
