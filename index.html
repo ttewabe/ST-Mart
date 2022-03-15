@@ -15,6 +15,7 @@
 
 </head>
 
+
 <body>
 
     <header class="jumbotron jumbotron-fluid">
@@ -28,7 +29,7 @@
                 <div class=" col-6 align-self-center  ">
 
                     <form id="form" role="search">
-                        <input type="search" id="query" name="q" placeholder="Search..."
+                        <input type="search" id="query" name="q" placeholder=""
                             aria-label="Search through site content">
                         <button> <svg viewBox="0 0 1024 1024">
                                 <path class="path1"
@@ -38,8 +39,7 @@
                         </button>
                     </form>
                 </div>
-
-
+                
                 <div class="col-4 align-self-center" align="right">
                     <a href="#"><i class="fa-solid fa-cart-minus"></i>🛒</a>
                 </div>
@@ -49,23 +49,36 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-light sticky-top">
+    <nav class="navbar navbar-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
+                <span class="line"></span> 
+                <span class="line"></span> 
+                <span class="line" ></span>
             </button>
-            <div class="col-3 align-self-center" align="right">
-                <button class="  text-white ">Sign In</button>
+            <div class="col-lg-5 ">
+                <ul class=" list-unstyled align-self-center">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">LIST</a></li>
+                    <li><a href="#">SITES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
             </div>
-            <div class="offcanvas offcanvas-start text-light" tabindex="-1" id="offcanvasNavbar"
+            
+            <span class="navbar-text ml-auto bg-secondary text-white align-right">
+                <a role="button" id="loginButton">
+                    <i class="fa fa-sign-in bg-success" ></i> Order-Here
+                </a>
+            </span>
+            <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header bg-success">
-                    <h5 class="offcanvas-title " id="offcanvasNavbarLabel">All</h5>
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title " id="offcanvasNavbarLabel">All</h3>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body bg-warning">
+                <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Spices</a>
@@ -112,6 +125,57 @@
             </div>
         </div>
     </nav>
+<!--Order_Here Modal-->
+    <div id="orderModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h3 class="modal-title ">Online Order</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row row-content">
+                                <label for="numCampers" class="col-form-label col-lg-6">Number of Orders</label>
+                                <div class="col-sm-6">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option>Select...</option>
+                                        <option value="one">Meat</option>
+                                        <option value="two">Drink</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="date" class="col col-form-label col-lg-6">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="date"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="CampsiteType" class="col col-form-label col-sm-6">Service</label>
+                                <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="siteType" id="siteTent" value="tent" autocomplete="off" checked> Delivery
+                                      </label>
+                                      <label class="btn btn-primary">
+                                        <input type="radio" name="siteType" id="siteRV" value="RV" autocomplete="off"> Pickup
+                                      </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="cancel" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="Submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container-fluid">
         <div class="row row-content-center">
@@ -183,7 +247,7 @@
                     </div>
                     <div class="col-sm-6 col-md-3 ">
                         <div class="card"><img alt="Card image cap" class="card-img-top img-fluid height-sm-200"
-                                src="images/rawMeat.jpg" alt="raw meat" />
+                                src="images/catering 1.jpeg" alt="raw meat" />
                             <div class="card">
                                 <h4 class="card-title text-center">Raw Meat</h4>
 
@@ -207,13 +271,11 @@
                     </div>
                     <div class="col-md-3 d-none d-md-block">
                         <div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
-                                src="images/rawMeat.jpg" alt="raw meat" />
+                                src="images/catering 2.jpeg" alt="raw meat" />
                             <div class="card">
-                                <h4 class="card-title text-center">Raw Meat</h4>
+                                <h4 class="card-title text-center">Catering</h4>
 
-                                <p class="card-text d-none d-sm-block"> We bring the best California meat that test like
-                                    home! There is more
-                                    ...</p>
+                                <p class="card-text d-none d-sm-block"> We are ready online order Delivery! There is more...</p>
                             </div>
                         </div>
                     </div>
@@ -238,14 +300,11 @@
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
-                                src="images/rawMeat.jpg" alt="raw meat" />
+                                src="images/event 1.jpeg" alt="raw meat" />
                             <div class="card">
-                                <h4 class="card-title text-center">Raw Meat</h4>
+                                <h4 class="card-title text-center">Event</h4>
 
-                                <p class="card-text d-none d-sm-block">We bring the best California meat that test like
-                                    home!
-                                    There is more
-                                    ...</p>
+                                <p class="card-text d-none d-sm-block">We are ready to serve you! There is more...</p>
                             </div>
                         </div>
                     </div>
@@ -279,25 +338,21 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-none d-sm-block">
                         <div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
-                                src="images/rawMeat.jpg" alt="raw meat" />
+                                src="images/Room.jpeg" alt="raw meat" />
                             <div class="card">
-                                <h4 class="card-title text-center">Raw Meat</h4>
+                                <h4 class="card-title text-center">Room</h4>
 
-                                <p class="card-text d-none d-sm-block">We bring the best California meat that test like
-                                    home! There is more
-                                    ...</p>
+                                <p class="card-text d-none d-sm-block">Do you need room? There is more</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 d-none d-sm-block">
                         <div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
-                                src="images/rawMeat.jpg" alt="raw meat" />
+                                src="images/roommate.jpeg" alt="raw meat" />
                             <div class="card">
-                                <h4 class="card-title text-center">Raw Meat</h4>
+                                <h4 class="card-title text-center">Roommate</h4>
 
-                                <p class="card-text d-none d-sm-block">We bring the best California meat that test like
-                                    home! There is more
-                                    ...</p>
+                                <p class="card-text d-none d-sm-block">Roommate wanted! There is more</p>
                             </div>
                         </div>
                     </div>
@@ -305,8 +360,6 @@
             </div>
          </div>
         </div>
-    
-
     </section>
     <!-- Pagination -->
     <nav aria-label="...">
@@ -325,19 +378,10 @@
         </ul>
     </nav>
     <hr>
-    <footer class="site-footer">
+    <footer class="footer">
         <div class="container">
-            <div class="row ">
-                <div class="col-4 col-sm-2 offset-1  ">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-5 text-center ">
+            <div class="row row-content ">
+                <div class="col-6 col-sm-5  text-center">
                     <h5>Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
                             class="fa fa-instagram"></i></a>
@@ -356,11 +400,7 @@
                 </div>
             </div>
         </div>
-
-
     </footer>
-
-
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -379,8 +419,12 @@
         }
 
         f.addEventListener('submit', submitted);
+
+        $(function() {
+            $("#loginButton").on("click", function () {
+            $("#orderModal").modal('show');
+            });
+        })
     </script>
-
 </body>
-
 </html>
