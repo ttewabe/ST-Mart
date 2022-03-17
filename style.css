@@ -26,13 +26,35 @@ header h2 {
     background-image:linear-gradient(#d5e9e9,white);
     color: white;
 }
+
+.text1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+  @keyframes text {
+    0% {
+      color: white;
+      margin-bottom: -30px; }
+    30% {
+      letter-spacing: 20px;
+      margin-bottom: -30px; }
+    85% {
+      letter-spacing: 4px;
+      margin-bottom: -30px; }
+   }
+
 .navbar-toggler{
     width: 40px;
     height: 34px;
     background-color: white;
     border:none;
 }
-
 .navbar-toggler .line{
     width: 80%;
     float: left;
