@@ -23,7 +23,7 @@ header h2 {
     font-weight:bold;  
 }
 
-/* Navigation or menu CSS */
+/* Navigation or list CSS */
 .list-unstyled{
     margin: 1px;
 	width: 800px;
@@ -50,6 +50,7 @@ header h2 {
  /* Footer CSS */
  footer {
     background-image:linear-gradient(white,#d2dfdf);
+  
    
 }
 .fa-github-square {
