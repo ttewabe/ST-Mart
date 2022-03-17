@@ -54,42 +54,164 @@
             </div>
         </div>
     </header>
+    <nav class="navbar navbar-light">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                <h1>Contact Us</h1>
-               <form>
-                    <div class="form-group">
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" placeholder="Your name" />
-                    </div>
-                    <div class="form-group">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname" placeholder="Your name" />
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" placeholder="Your companyname" />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your email" />
-                    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="col-lg-8 ">
+                <ul class="list-unstyled align-self-center">
+                    <li><a href="index.html" >ABOUT</a></li>
+                    <li><a href="#">LIST</a></li>
+                    <li><a href="#">SITES</a></li>
+                    <li><a href="contact.html" class="active">CONTACT</a></li>
+                    <li><a href="#" id ="loginButton">ORDER</a></li>
+                </ul>
+            </div>
+            <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title " id="offcanvasNavbarLabel">All</h3>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-            <div class="form-group">
-                <label for="message">Leave your message</label> <br />
-                <textarea name="message" id="message" cols="80" rows="10"></textarea>
-            </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Spices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Church Supplies</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Traditional Drinks
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Tela</a></li>
+                                <li><a class="dropdown-item" href="#">Tej</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ethiopian Beers</a></li>
+                            </ul>
+                        </li>
 
-            <div class="form-group">
-                <input type="submit" value='Submit' class="btn">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu bg-info" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Find a roommate</a></li>
+                                <li><a class="dropdown-item" href="#">Catering</a></li>
+                                <li>
+                                    <Event class="dropdown-item" href="#">Event Supply and Info
+                                </li>
+                                <li>
+                                    <Ethiopian class="dropdown-item" href="#">Ethiopian Movies, Books, Dresses, <br>
+                                        Church material and others</br>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Display:- Calendar and local Events</a></li>
+                                <li><a class="dropdown-item" href="#">Interpreter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            </form>
-            </div>
-        </div>    
         </div>
-    <footer class="footer">
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col"> 
+                <h2>Contact Us</h2>
+                <hr />
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4">
+                <h5>Our Address</h5>
+                <address>
+                    4548 Park Paxton pl<br />
+                    San Jose, CA 95133<br />
+                    U.S.A.
+                </address>
+            </div>
+            <div class="col">
+                <a role="button" class="btn btn-link" href="tel:+14085147755"><i class="fa fa-phone"></i> 1-408-514-77--</a><br />
+                <a role="button" class="btn btn-link" href="st-mart@emart.com"><i class="fa fa-envelope-o"></i>st-mart@emart.com</a>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-12 comment">
+                <h2>Comments</h2>
+                <hr />
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row ">
+                        <label for="firstName" class="col-md-2 col-form-label ">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                        </div>
+                        <div class="col-7">
+                            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col offset-md-2">
+                            May we contact you?
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                <label for="contactNo" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">Send Feedback</button> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+       </div>
+
+    </div>
+    <footer class="footer fixed-bottom">
         <div class="container-fluid">
                 <div class="row row-content">
                     <div class="col-lg-4 col-xs-4 social">
@@ -103,12 +225,12 @@
                      </div>
                     <div class="col-lg-4 col-xs-4 ">
                     <a role="button" class="btn btn-link" href="tel:+1-555-555-5555"><i
-                            class="fa fa-phone fa-lg text-primary"></i> 1-555-555-5555</a><br />
+                            class="fa fa-phone fa-lg text-primary"></i> 1-408-514-77--</a><br />
                     <a role="button" class="btn btn-link"><i class="fa fa-envelope-o fa-lg text-primary"
                             href="mailto:orederethio@gmail.com"></i>mailto:orederethio@gmail.com</a>
                     </div>
                     <div class="col-lg-4 col-xs-4">
-                    © 2022 | Designed & coded with 💙🇺🇸 by Surafel & Tewabe 
+                    © 2022 | Designed & coded with 💙🇺🇸 by ST-Mart Team 
                   </div>
                 </div>
             </div>

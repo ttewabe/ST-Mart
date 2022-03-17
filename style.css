@@ -23,7 +23,7 @@ header h2 {
     font-weight:bold;  
 }
 
-/* Navigation or menu CSS */
+/* Navigation or list CSS */
 .list-unstyled{
     margin: 1px;
 	width: 800px;
@@ -50,6 +50,7 @@ header h2 {
  /* Footer CSS */
  footer {
     background-image:linear-gradient(white,#d2dfdf);
+  
    
 }
 .fa-github-square {
@@ -87,7 +88,6 @@ header h2 {
     background-color: rgb(21, 13, 139);
     margin-bottom: 4px;
 }
-
 
 form {
     background-color: rgb(255, 255, 255);
@@ -209,7 +209,6 @@ li{
 
 }
 
-
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -221,7 +220,7 @@ li{
     letter-spacing: 0.5px;
     padding-right: 8px;
 }
-
+/* Title*/
 h7{
     color: rgb(63, 3, 3);
     font-size: 20px;
@@ -245,4 +244,11 @@ h7{
     text-shadow: 0 0 40px rgb(255, 255, 255),
                  0 0 60px rgb(255, 255, 255),
                  0 0 80px rgb(255, 255, 255),
+  }
+  /* contact us*/
+  .comment{
+      margin: 5px;
+  }
+  .name{
+      margin: 2px;
   }
