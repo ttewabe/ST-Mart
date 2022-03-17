@@ -220,7 +220,7 @@ li{
     letter-spacing: 0.5px;
     padding-right: 8px;
 }
-
+/* Title*/
 h7{
     color: rgb(63, 3, 3);
     font-size: 20px;
@@ -244,4 +244,11 @@ h7{
     text-shadow: 0 0 40px rgb(255, 255, 255),
                  0 0 60px rgb(255, 255, 255),
                  0 0 80px rgb(255, 255, 255),
+  }
+  /* contact us*/
+  .comment{
+      margin: 5px;
+  }
+  .name{
+      margin: 2px;
   }
