@@ -15,9 +15,13 @@ header h2 {
     color: #CEC8FF;
 }
 
-.footer {
-    background-image:linear-gradient(white,#eaeeee);
-    margin-top: 60px;
+footer {
+    background-image:linear-gradient(white,#a6cece);
+    
+    margin-top: 160px;
+}
+.social{
+    font-size: 60px;
 }
 
 .jumbotron {
