@@ -1,19 +1,22 @@
+html{
+    overflow-x: hidden;
+   
+}
 body {
+
     background-color: white;
     font-family: "Open Sans", sans-serif;
+    height: 100%;
 }
 
 h2, h4 {
-    font-family: "Lobster", cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
 }
 
-h2 {
-    color: #3046C5;
-}
 
-header h2 {
-    color: #CEC8FF;
-}
+
+
 /* Cart*/
 .fa-cart-shopping{
   display:block;
@@ -64,13 +67,13 @@ header h2 {
 }
 
 .social{
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .jumbotron {
     margin: 0;
     padding: 5px;
-    background-image:linear-gradient(#031a08,rgb(94, 126, 21));
+    background-image:#fff;
     color: white;
 }
 
@@ -90,7 +93,7 @@ header h2 {
 
 
 form {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(197, 194, 194);
     
     width: 500px;
     height: 40px;
@@ -159,22 +162,7 @@ li{
      
 
  }
- .slider-text1{
-     color: #1f0d3d;
- }
- .slider-text2{
-    color: #0d373d;
-}
-.slider-text3{
-    color: #e7e54d;
-}
-.slider-text4{
-    color: #8be76f;
-}
-.slider-text5{
-    background-color: #e2dee9;
-    color: #5199d4;
-}
+
 .slider {
     animation-name            : scrollBanner;
     animation-duration        : 25s;
@@ -206,6 +194,7 @@ li{
     margin: 0 auto;
     float: none;
     margin-bottom: 10px;
+    
 
 }
 
@@ -223,7 +212,7 @@ li{
 }
 
 h7{
-    color: rgb(63, 3, 3);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bold;
     font-family: monospace;
@@ -241,8 +230,17 @@ h7{
     margin-left: 1px
   }
   h7:hover span{
-    color: white;
+    color: blue;
     text-shadow: 0 0 40px rgb(255, 255, 255),
                  0 0 60px rgb(255, 255, 255),
                  0 0 80px rgb(255, 255, 255),
   }
+
+.st-text::first-letter{
+    font-size: 6rem;
+    display: block;
+    float: left;
+    line-height: 0.5;
+    margin: 15px 15px 10px 0;
+    color: #003366;
+}
