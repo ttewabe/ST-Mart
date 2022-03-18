@@ -148,12 +148,16 @@ li{
 
 #carouselExampleControls{
    position: absolute;
-   max-height: 300px;
+  
 }
 #just{
     position: relative;
  
  }
+ .carousel-inner{
+     height: 80vh ;
+ }
+ 
  .slider{
      font-size: 40px;
      font-weight: bold;
@@ -240,9 +244,10 @@ h7{
     font-size: 6rem;
     display: block;
     float: left;
-    line-height: 0.5;
+    font-family: monospace;
+    line-height: 0.4;
     margin: 15px 15px 10px 0;
-    color: #003366;
+    color: #0000ff;
 }
 
   /* contact us*/
