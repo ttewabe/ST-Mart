@@ -14,16 +14,13 @@ h2, h4 {
     color: #fff;
 }
 
-
-
-
 /* Cart*/
-.fa-cart-shopping{
-  display:block;
-  width: 120px;
+.fa-shopping-cart{
+  margin:auto;
+  height: 40px;
   float:right;
-  font-size: 20px;
-    font-weight:bold;  
+  font-size: 30px;
+  align-items: center;
 }
 
 /* Navigation or list CSS */
@@ -66,6 +63,10 @@ h2, h4 {
 .fa-twitter-square {
    color: rgb(20, 98, 149);
 }
+.fa-envelope{
+    color:blue;
+    font-size: 20px;
+}
 
 .social{
     font-size: 30px;
@@ -93,11 +94,11 @@ h2, h4 {
 }
 
 form {
-    background-color: rgb(197, 194, 194);
+    background-image:linear-gradient(rgb(236, 232, 232),rgb(200, 202, 170),#ffffff);
     
-    width: 500px;
-    height: 40px;
-    border-radius: 5px;
+    width: 700px;
+    height: 50px;
+    border-radius: 1px;
     display: flex;
     flex-direction: row;
     align-items: center;
