@@ -51,8 +51,11 @@ h2, h4 {
  footer {
     background-image:linear-gradient(white,#d2dfdf);
   
-   
+ }
+.social{
+ font-size: 30px;
 }
+
 .fa-github-square {
     color: rgb(3, 3, 3);
 }
@@ -68,9 +71,7 @@ h2, h4 {
     font-size: 20px;
 }
 
-.social{
-    font-size: 30px;
-}
+
 
 .jumbotron {
     margin: 0;
@@ -146,7 +147,7 @@ form {
 li{
     text-align: left;
 }
-
+/* carouse */
 #carouselExampleControls{
    position: absolute;
   
@@ -192,6 +193,38 @@ li{
     97%  { transform : translateX(-80%) }
     to   { transform : translateY(0%) }
 }
+
+/* carousel control icon*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+   
+  height: 80px;
+  width: 80px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 2px solid blue;
+  background-image: none;
+  
+}
+
+.carousel-control-next-icon:after
+{
+    
+content: 'EM';
+  font-size: 50px;
+  color: blue;
+  align-self: center;
+}
+
+.carousel-control-prev-icon:after {
+  content: 'EM';
+  font-size: 50px;
+  text-align: center;
+  color: blue;
+}
+
+/* card*/
 .card {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
