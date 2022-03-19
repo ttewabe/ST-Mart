@@ -291,4 +291,15 @@ h7{
   .name{
       margin: 2px;
   }
+/* Contact us*/
+.form-group {
+padding: 10px;
+}
+.comment{
+  margin-top: 20px;
+  
+  font-size: 20px;
+  font-weight: bold;
+  color: #0000ff;
+}
 
