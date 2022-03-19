@@ -15,12 +15,13 @@ h2, h4 {
 }
 
 /* Cart*/
-.fa-shopping-cart{
+.cart{
   margin:auto;
   height: 40px;
   float:right;
   font-size: 30px;
   align-items: center;
+
 }
 
 /* Navigation or list CSS */
@@ -95,20 +96,19 @@ h2, h4 {
 }
 
 form {
-    background-image:linear-gradient(rgb(236, 232, 232),rgb(200, 202, 170),#ffffff);
-    
+   border: 1px solid blue;
     width: 700px;
     height: 50px;
-    border-radius: 1px;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+   
   }
   input {
     
     all: unset;
     font: 16px system-ui;
-    color: rgb(66, 11, 168);
+    color: rgb(0, 0, 0);
     height: 100%;
     width: 100%;
     padding: 6px 10px;
@@ -211,14 +211,14 @@ li{
 .carousel-control-next-icon:after
 {
     
-content: 'EM';
+content: '>';
   font-size: 50px;
   color: blue;
   align-self: center;
 }
 
 .carousel-control-prev-icon:after {
-  content: 'EM';
+  content: '<';
   font-size: 50px;
   text-align: center;
   color: blue;
