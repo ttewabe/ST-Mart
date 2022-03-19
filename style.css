@@ -14,16 +14,13 @@ h2, h4 {
     color: #fff;
 }
 
-
-
-
 /* Cart*/
-.fa-cart-shopping{
-  display:block;
-  width: 120px;
+.fa-shopping-cart{
+  margin:auto;
+  height: 40px;
   float:right;
-  font-size: 20px;
-    font-weight:bold;  
+  font-size: 30px;
+  align-items: center;
 }
 
 /* Navigation or list CSS */
@@ -54,8 +51,11 @@ h2, h4 {
  footer {
     background-image:linear-gradient(white,#d2dfdf);
   
-   
+ }
+.social{
+ font-size: 30px;
 }
+
 .fa-github-square {
     color: rgb(3, 3, 3);
 }
@@ -66,10 +66,12 @@ h2, h4 {
 .fa-twitter-square {
    color: rgb(20, 98, 149);
 }
-
-.social{
-    font-size: 30px;
+.fa-envelope{
+    color:blue;
+    font-size: 20px;
 }
+
+
 
 .jumbotron {
     margin: 0;
@@ -93,11 +95,11 @@ h2, h4 {
 }
 
 form {
-    background-color: rgb(197, 194, 194);
+    background-image:linear-gradient(rgb(236, 232, 232),rgb(200, 202, 170),#ffffff);
     
-    width: 500px;
-    height: 40px;
-    border-radius: 5px;
+    width: 700px;
+    height: 50px;
+    border-radius: 1px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -145,7 +147,7 @@ form {
 li{
     text-align: left;
 }
-
+/* carouse */
 #carouselExampleControls{
    position: absolute;
   
@@ -191,6 +193,38 @@ li{
     97%  { transform : translateX(-80%) }
     to   { transform : translateY(0%) }
 }
+
+/* carousel control icon*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+   
+  height: 80px;
+  width: 80px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 2px solid blue;
+  background-image: none;
+  
+}
+
+.carousel-control-next-icon:after
+{
+    
+content: 'EM';
+  font-size: 50px;
+  color: blue;
+  align-self: center;
+}
+
+.carousel-control-prev-icon:after {
+  content: 'EM';
+  font-size: 50px;
+  text-align: center;
+  color: blue;
+}
+
+/* card*/
 .card {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -257,4 +291,15 @@ h7{
   .name{
       margin: 2px;
   }
+/* Contact us*/
+.form-group {
+padding: 10px;
+}
+.comment{
+  margin-top: 20px;
+  
+  font-size: 20px;
+  font-weight: bold;
+  color: #0000ff;
+}
 
