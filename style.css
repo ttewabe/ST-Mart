@@ -13,6 +13,43 @@ h2, h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
 }
+.st-iidiv{
+  width: 100%;
+  position: relative;
+  display: flex;
+
+}
+.st-sinput{
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  
+
+}
+.st-sinput:focus{
+  color: #00B4CC;
+}
+.st-iinput{
+/*   position: absolute; */
+  background: #f3f4f4;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  }
+/*   transform: translateX(-8%); */
+  
+
 
 /* Cart*/
 .cart{
@@ -73,13 +110,13 @@ h2, h4 {
 }
 
 
-
+/* 
 .jumbotron {
     margin: 0;
     padding: 5px;
     background-image:#fff;
     color: white;
-}
+} */
 
 .navbar-toggler{
     width: 40px;
@@ -94,8 +131,14 @@ h2, h4 {
     background-color: rgb(21, 13, 139);
     margin-bottom: 4px;
 }
-
-form {
+.st-offbtn{
+     
+  all: unset;
+  cursor: pointer;
+  width: 35px;
+  height: 30px;
+}
+/* form {
    border: 1px solid blue;
     width: 700px;
     height: 50px;
@@ -103,8 +146,8 @@ form {
     display: flex;
     flex-direction: row;
    
-  }
-  input {
+  } */
+/*   input {
     
     all: unset;
     font: 16px system-ui;
@@ -119,13 +162,7 @@ form {
     opacity: 0.7; 
     
   }
-  button {
-     
-    all: unset;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-  }
+ 
   
   svg {
     color: rgb(0, 0, 0);
@@ -133,7 +170,7 @@ form {
     width: 70px;
     height: 50px;
     padding: 10px;
-  }
+  } */
 
 .card-img-top {
     width: 100%;
@@ -198,13 +235,16 @@ li{
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
    
-  height: 80px;
-  width: 80px;
+  height: 45px;
+  width: 45px;
   outline: black;
   background-size: 100%, 100%;
   border-radius: 50%;
   border: 2px solid blue;
   background-image: none;
+  transform: translateY(-300%);
+  
+  
   
 }
 
@@ -212,14 +252,15 @@ li{
 {
     
 content: '>';
-  font-size: 50px;
+  font-size: 40px;
   color: blue;
   align-self: center;
+ 
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   color: blue;
 }
@@ -248,25 +289,33 @@ content: '>';
     padding-right: 8px;
 }
 /* Title*/
-h7{
+.st-logo{
+    display: flex;
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bold;
     font-family: monospace;
-    letter-spacing: 4px;
-    cursor: pointer
+    letter-spacing: 2px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    
   }
-  h7 span{
+.st-logo span:nth-child(1){
+  color: #0000ff;
+  font-size: 30px;
+}
+.st-logo span{
     transition: .5s linear;
   }
-  h7:hover span:nth-child(1){
+.st-logo:hover span:nth-child(1){
     margin-right: 1px
   }
   
-  h7:hover span:nth-child(2){
+.st-logo:hover span:nth-child(2){
     margin-left: 1px
   }
-  h7:hover span{
+.st-logo:hover span{
     color: blue;
     text-shadow: 0 0 40px rgb(255, 255, 255),
                  0 0 60px rgb(255, 255, 255),
@@ -284,6 +333,13 @@ h7{
     color: #0000ff;
 }
 
+.st-cart{
+  display: flex;
+  color: #0000ff;
+  justify-content: center;
+  align-items: center;
+}
+
   /* contact us*/
   .comment{
       margin: 5px;
@@ -292,31 +348,7 @@ h7{
       margin: 2px;
   }
 
-  .carousel-control-next-icon,
-  .carousel-control-prev-icon {
-    height: 100px;
-    width: 100px;
-    outline: black;
-    background-size: 100%, 100%;
-    background-image: none;
-    display: flex;
-    justify-content: center;
-   
-  }
-  .carousel-control-prev-icon::after{
-      content: '<';
-      font-size: 70px;
-      color: #000;
-      transform: translate(-15%, 60%);
   
-  }
-  .carousel-control-next-icon::after{
-    content: '>';
-    font-size: 70px;
-    color: #000;
-    transform: translate(15%, 60%);
-}
-
 /* Contact us*/
 .form-group {
 padding: 10px;
