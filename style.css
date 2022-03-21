@@ -193,7 +193,7 @@ li{
   border-radius: 50%;
   border: 2px solid blue;
   background-image: none;
-  transform: translateY(-500%);
+  transform: translateY(-400%);
   
 }
 .carousel-control-next-icon:after {  
