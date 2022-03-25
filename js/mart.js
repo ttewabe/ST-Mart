@@ -13,8 +13,4 @@ const f = document.getElementById('form');
 f.addEventListener('submit', submitted);
 
 //order modal
-        $(function () {
-            $("#loginButton").on("click", function () {
-                $("#orderModal").modal('show');
-            });
-        })
+      
